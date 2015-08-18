@@ -11,11 +11,10 @@ class RecoveryPage
     end
 
     def get_link_from_gmail(email, password)
-	sleep 20
 	    require 'mail'
 	    require 'gmail'
             gmail = Gmail.new(email, password)
-	    email = gmail.inbox.emails(:unread, :from => "hello@email.ghost.org").first 
+	    email = gmail.inbox.emails(:unread, :from => "hello@email.ghost.org").first
 	    message = email.html_part
 	    mail = Mail.new(message)
 	    mail.body.decoded
@@ -49,6 +48,11 @@ class RecoveryPage
             page.should have_content(text)
         end
     end
+
+    def wait(time)
+        sleep time.to_i
+    end
+
 
 end
 
