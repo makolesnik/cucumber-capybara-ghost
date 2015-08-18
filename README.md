@@ -5,7 +5,7 @@ Some tests for Ghost (blogging plathorm) using Cucumber, Capybara, Page Object.
 Test object: Ghost is an open source publishing platform (https://ghost.org/)
 
 
-# Requirements:
+## Requirements:
 
 Ruby
 
@@ -14,7 +14,7 @@ bundle
 Browser drivers added to your Path or at least the last version of Firefox is installed.
 
 
-# How to get started:
+## How to get started:
 
 $ git clone https://github.com/mkpythonanywhereblog/cucumber-capybara-ghost.git
 
